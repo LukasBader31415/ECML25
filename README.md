@@ -21,14 +21,12 @@ Sales-Potential-Estimation-Data-Quality-Visualization/
 │   │   │   ├── melted_data/  
 │   │   │   └── pkl/  
 │   ├── my_functions/  
-│   │   ├── functions_data_enrichment.py  
 │   │   ├── functions_data_linking.py  
 │   │   ├── functions_feature_selection.py  
 │   │   └── functions_tsne_analysis.py  
 │   ├── data_linking_ipynb/  
-│   ├── data_enrichment_ipynb/  
 │   ├── feature_selection_ipynb/  
-│   └── t-sne_analysis_ipynb/  
+│   └── analysis_ipynb/  
 └── README.md
 
 ## Notebooks (It makes sense to run the notebooks in the mentioned order, as they build on each other)
@@ -49,17 +47,11 @@ The diagram shows the data linking process:
 
 
 ### 2. `feature_selection_ipynb/`
-This notebook uses a weighted ranking approach to select the most relevant features for industries and occupations, with a focus on expertise and modeling requirements. From a domain perspective, industries and occupations with high employment and significant tool consumption were prioritized. In terms of modeling, the goal was to cover as many regions as possible to optimize clustering. Some industries were manually selected and aggregated due to their strong connection to the manufacturing sector.
+This notebook builds the master dataframe as the foundation for further analysis. The selection of features was guided by domain experts to ensure relevance and applicability. Industries and occupations were chosen based on their significance in terms of employment and tool consumption, with a particular emphasis on sectors closely linked to manufacturing.
 
-Due to anonymization in the enrichment process, the key features were manually selected at the end of the notebook.
 
-### 3. `Analysis_ipynb/`
+### 3. `analysis_ipynb/`
 This notebook analyzes the U.S. market by applying t-SNE for dimensionality reduction and different clustering methods for clustering across 3,233 counties. The resulting clusters are optimized based on silhouette scores and analyzed to identify key features. The notebook then visualizes the cluster characteristics and regional distributions. A Random Forest model is used to identify the most important features driving cluster assignments. The results highlight significant patterns and insights related to the U.S. market and its regional variations.
-
-![grafik](https://github.com/user-attachments/assets/dd4acd34-627e-41b6-98f0-811a07670ba1)
-
-![grafik](https://github.com/user-attachments/assets/b2d8fa7c-f268-4bbe-bf1f-e533fde59038)
-
 
 
 
