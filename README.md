@@ -26,7 +26,7 @@ Sales-Potential-Estimation-Data-Quality-Visualization/
 │   │   └── functions_tsne_analysis.py  
 │   ├── data_linking_ipynb/  
 │   ├── feature_selection_ipynb/  
-│   └── analysis_ipynb/  
+│   └── Analysis_ECML_ipynb/  
 └── README.md
 
 ## Notebooks (It makes sense to run the notebooks in the mentioned order, as they build on each other)
