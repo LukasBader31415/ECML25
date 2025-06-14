@@ -50,8 +50,8 @@ The diagram shows the data linking process:
 This notebook builds the master dataframe as the foundation for further analysis. The selection of features was guided by domain experts to ensure relevance and applicability. Industries and occupations were chosen based on their significance in terms of employment and tool consumption, with a particular emphasis on sectors closely linked to manufacturing.
 
 
-### 3. `analysis_ipynb/`
-This notebook analyzes the U.S. market by applying t-SNE for dimensionality reduction and different clustering methods for clustering across 3,233 counties. The resulting clusters are optimized based on silhouette scores and analyzed to identify key features. The notebook then visualizes the cluster characteristics and regional distributions. A Random Forest model is used to identify the most important features driving cluster assignments. The results highlight significant patterns and insights related to the U.S. market and its regional variations.
+### 3. `Analysis_ECML_ipynb/`
+This notebook analyzes the U.S. market by applying different dimensionality reduction techniques and different clustering methods for clustering across 3,233 counties. The resulting clusters are optimized based on various metrics and analyzed to identify key features. The notebook then visualizes the cluster characteristics and regional distributions. A Random Forest model is used to identify the most important features driving cluster assignments. The results highlight significant patterns and insights related to the U.S. market and its regional variations.
 
 
 
